@@ -109,7 +109,7 @@ class BalloonDataset(utils.Dataset):
         # }
         # We mostly care about the x and y coordinates of each region
         # Note: In VIA 2.0, regions was changed from a dict to a list.
-        annotations = json.load(open(os.path.join(dataset_dir, "buildings_AOI_2_Vegas_img1000.geojson")))
+        annotations = json.load(open(os.path.join(dataset_dir, "KhartoumTrainBLDG.json")))
         annotations = list(annotations.values())  # don't need the dict keys
 
         # The VIA tool saves images in the JSON even if they don't have any
